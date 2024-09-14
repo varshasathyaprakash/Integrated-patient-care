@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="hospital_pge.css" />
+    <title>Hospital</title>
+  </head>
+  <body>
+    <header class="header-bar">
+      <div class="head-div">
+        <div class="sub-head-div1">
+          <img src="Hospital Logo.png" class="logo" />
+        </div>
+
+        <div class="sub-head-div2">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-links">Home</a></li>
+            <li><a href="about_page.html" class="nav-links">About</a></li>
+            <li><a href="hospital_page.html" class="nav-links">Hospital</a></li>
+            <li>
+              <a href="Book_page.html" class="nav-links">Book&nbsp;Now</a>
+            </li>
+            <li>
+              <a href="view_page.php" class="nav-links">View</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="section1--div1">
+        <img src="Hospital.webp" class="hospital-bg" />
+      </div>
+    </section>
+
+    <div class="book_form">
+      <div class="order-form">
+        <h2 style="color: aliceblue">Appoint a New Doctor</h2>
+        <form action="doctor_page.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required />
+
+          <label for="name">Doctor ID:</label>
+          <input type="text" name="doctor-id" id="doctor-id" required />
+
+          <label for="name">Patient Number:</label>
+          <input
+            type="number"
+            name="p-no"
+            id="p-no"
+            required
+            min="1"
+            max="20"
+          />
+
+          <label for="name">Department No:</label>
+          <input
+            type="number"
+            name="dept-no"
+            id="dept-no"
+            min="1"
+            max="10"
+            required
+          />
+
+          <label>Department Name:</label>
+          <select
+            name="dept-name"
+            id="dept-name"
+            style="border: 1px solid #ccc; border-radius: 5px; padding: 8px"
+          >
+            <option value="">--- Department ---</option>
+            <option value="cardiology">Cardiology</option>
+            <option value="pediatrics">Pediatrics</option>
+            <option value="orthopedics">Orthopedics</option>
+            <option value="dermatology">Dermatology</option>
+            <option value="neurology">Neurology</option>
+            <option value="oncology">Oncology</option>
+            <option value="gynecology">Gynecology</option>
+            <option value="ent">ENT</option>
+            <option value="psychiatry">Psychiatry</option>
+          </select>
+
+          <button type="submit">ADD</button>
+        </form>
+      </div>
+
+      <div class="order-form">
+        <h2 style="color: aliceblue">Appoint a New Nurse</h2>
+        <form action="nurse_page.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required />
+
+          <label for="name">Nurse ID:</label>
+          <input type="text" name="nurse-id" id="nurse-id" required />
+
+          <label for="name">Room No:</label>
+          <input
+            type="number"
+            name="room-no"
+            id="room-no"
+            required
+            min="1"
+            max="20"
+          />
+
+          <label for="name">Patient No.:</label>
+          <input
+            type="number"
+            name="patient-no"
+            id="patient-no"
+            min="1"
+            max="20"
+          />
+          required />
+
+          <button type="submit">ADD</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

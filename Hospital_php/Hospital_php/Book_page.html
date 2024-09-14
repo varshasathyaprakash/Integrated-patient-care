@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Book_page.css" />
+    <title>Hospital</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  </head>
+  <body ng-app="myApp" mg-controller="myCtrl">
+    <header class="header-bar">
+      <div class="head-div">
+        <div class="sub-head-div1">
+          <img src="Hospital Logo.png" class="logo" />
+        </div>
+
+        <div class="sub-head-div2">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-links">Home</a></li>
+            <li><a href="about_page.html" class="nav-links">About</a></li>
+            <li><a href="hospital_page.html" class="nav-links">Hospital</a></li>
+            <li>
+              <a href="Book_page.html" class="nav-links">Book&nbsp;Now</a>
+            </li>
+            <li>
+              <a href="view_page.php" class="nav-links">View</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="section1--div1">
+        <img src="Hospital.webp" class="hospital-bg" />
+      </div>
+    </section>
+
+    <div class="book_form">
+      <div class="order-form">
+        <h2 style="color: aliceblue">Please Fill the Patient Details</h2>
+        <form action="Book_page.php" method="POST">
+          <label for="name">First Name:</label>
+          <input type="text" name="firstname" id="firstname" required />
+
+          <label for="name">Last Name:</label>
+          <input type="text" name="lastname" id="lastname" required />
+
+          <label for="name">Patient Number:</label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            required
+            min="1"
+            max="20"
+          />
+
+          <label for="name">Age:</label>
+          <input type="number" name="age" id="age" required min="1" max="100" />
+
+          <label for="name">Disease:</label>
+          <input type="text" name="disease" id="disease" required />
+
+          <label>Gender:</label>
+          <select
+            name="gender"
+            id="gender"
+            style="border: 1px solid #ccc; border-radius: 5px; padding: 8px"
+          >
+            <option value="">--- Gender ---</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+
+          <label for="name">Room No:</label>
+          <input
+            type="number"
+            name="room-no"
+            id="room-no"
+            min="1"
+            max="20"
+            required
+          />
+
+          <label>Doctor Name:</label>
+          <select
+            name="doctor-name"
+            id="doctor-name"
+            style="border: 1px solid #ccc; border-radius: 5px; padding: 8px"
+          >
+            <option value="">--- Doctor ---</option>
+            <option value="Dr.Satyaprakash">Dr.Satyaprakash</option>
+            <option value="Dr.Kulkarni">Dr.Kulkarni</option>
+            <option value="Dr.Praveen">Dr.Praveen</option>
+            <option value="Dr.Jagadesh">Dr.Jagadesh</option>
+            <option value="Dr.Pranay">Dr.Pranay</option>
+            <option value="Dr.Lawren">Dr.Lawren</option>
+            <option value="Dr.Carrie">Dr.Carrie</option>
+            <option value="Dr.Smiha">Dr.Smiha</option>
+          </select>
+
+          <label for="name">Admit Date:</label>
+          <input type="date" name="admit-date" id="admit-date" required />
+
+          <label for="name">Discharge Date:</label>
+          <input
+            type="date"
+            name="discharge-date"
+            id="discharge-date"
+            required
+          />
+
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

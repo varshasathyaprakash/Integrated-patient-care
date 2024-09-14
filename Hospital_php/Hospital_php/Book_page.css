@@ -1,0 +1,143 @@
+/*Colors
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  overflow-x: hidden;
+  background-color: #1a1a1a;
+}
+
+/****************************
+HEADER
+*****************************/
+.header-bar {
+  width: 153.6rem;
+  background-color: #1a1a1a;
+  height: 6rem;
+}
+.head-div {
+  display: flex;
+  align-items: center;
+}
+.sub-head-div1 {
+  width: 46.08rem;
+  height: 6rem;
+  /* background-color: green; */
+}
+.logo {
+  width: 12rem;
+  height: 5.6rem;
+  padding: 0.3rem;
+  border-radius: 1.5rem;
+}
+.sub-head-div2 {
+  display: flex;
+  align-items: center;
+  width: 61.44rem;
+  height: 6rem;
+  /* background-color: red; */
+}
+.sub-head-div3 {
+  /* background-color: purple; */
+  width: 46.08rem;
+  height: 6rem;
+}
+
+.nav-list {
+  display: flex;
+  align-content: center;
+  list-style: none;
+  gap: 3rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: 0.6rem 8rem;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+.nav-links:hover {
+  font-size: 1.9rem;
+  color: #e6ffe6;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.hospital-bg {
+  overflow: hidden;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 153.6rem;
+  opacity: 0.6;
+}
+/***********************
+FORM 
+***********************/
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "poppins", sans-serif;
+}
+
+.order-form {
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 80%;
+  margin: 0 auto;
+  opacity: 0.5;
+}
+
+.book_form {
+  margin-top: 30px;
+}
+.order-form h2 {
+  text-align: center;
+  font-size: 20px;
+}
+.order-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.order-form label {
+  font-size: 18px;
+  color: white;
+  padding: 5px;
+}
+.order-form button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #ffa500;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
